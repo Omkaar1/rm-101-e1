@@ -13,15 +13,13 @@ const Counter = () => {
   };
   return (
     <div className={styles.counter}>
-      <button
-        data-testid="task-counter-increment-button"
-        onclick={handleInc}
-      ></button>
+      <button data-testid="task-counter-increment-button" onClick={handleInc}>
+        -
+      </button>
       <span data-testid="task-counter-value">{count}</span>
-      <button
-        data-testid="task-counter-decrement-button"
-        onClick={handleDec}
-      ></button>
+      <button data-testid="task-counter-decrement-button" onClick={handleDec}>
+        +
+      </button>
     </div>
   );
 };
