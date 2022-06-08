@@ -1,4 +1,5 @@
 import React from "react";
+import Counter from "../Counter/Counter";
 import styles from "./task.module.css";
 
 const Task = () => {
@@ -8,7 +9,8 @@ const Task = () => {
       <input type="checkbox" data-testid="task-checkbox" />
       <div data-testid="task-text"></div>
       {/* Counter here */}
-      <button data-testid="task-remove-button"></button>
+      <Counter />
+      <button data-testid="task-remove-button">Delete</button>
     </li>
   );
 };
